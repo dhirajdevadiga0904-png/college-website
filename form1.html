@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validatelogin()
+        {
+            var cousername = "dhiraj";
+            var copassword = "123456";
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if(username === cousername && password === copassword){
+                window.location.href="SHOP.HTML";
+                
+                return false;
+            }else{
+                document.getElementById("message").innerText="INCORRECT PASSWORD";
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<center>
+    <form onsubmit="return validatelogin()">
+    <table>
+        <th colspan="10"><img src="https://tse3.mm.bing.net/th?id=OIP.CoLPEXQ4PW4ll5aJFdWGCwHaEK&pid=Api&P=0&h=180" alt=""></th>
+    <tr>
+        <td colspan="8">
+            <label for="username"><b>USERNAME :-</b></label>
+        </td>
+    </tr>
+        <tr>
+            <td><input type="text" id="username" required><BR><BR></td></tr>
+    <tr>
+        <td><label for="password"><b>PASSWORD :-</b></label></td>
+        
+    </tr>
+    <tr><td><input type="password" id="password" required><BR></td><BR></tr>
+    <tr>
+        <td><button type="submit"><a href="C:\Users\dhira\INPUT.HTML"><B>LOGIN</B></a></button>
+        <button><a href="C:\Users\dhira\INPUT.HTML"><B>SIGNIN</B></a></button></button></td>
+    </tr>
+    </table>
+
+    </form>
+    <P id="message"></P>
+    
+    
+    </center>
+    
+</body>
+</html>
